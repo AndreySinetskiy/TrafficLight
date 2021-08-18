@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,42 +13,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-X6-rSY">
-                                <rect key="frame" x="167" y="104" width="80" height="360"/>
+                                <rect key="frame" x="120" y="60" width="80" height="360"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-Id-t4w">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="0Lz-QO-FVU"/>
-                                            <constraint firstAttribute="width" constant="80" id="o3W-WD-aN4"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pv8-If-VPx">
                                         <rect key="frame" x="0.0" y="140" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="7Px-84-wP0"/>
-                                            <constraint firstAttribute="height" constant="80" id="KAj-sE-WQW"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="ODe-8L-Xd6"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="iue-iP-x5Z"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-UT-cvF">
                                         <rect key="frame" x="0.0" y="280" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="q9v-Yx-2Dr"/>
-                                            <constraint firstAttribute="width" constant="80" id="rPd-P3-ybS"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="360" id="2Tt-Xo-yaT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="360" id="NLO-Nw-Zrc"/>
+                                    <constraint firstAttribute="width" constant="80" id="oVg-nK-Ddc"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-xA-fNe">
-                                <rect key="frame" x="145" y="573" width="132" height="51"/>
+                                <rect key="frame" x="117" y="510" width="66" height="51"/>
                                 <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Start">
@@ -62,9 +53,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="top" secondItem="F4d-X6-rSY" secondAttribute="bottom" constant="109" id="OCZ-yW-GZP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgh-xA-fNe" secondAttribute="trailing" constant="137" id="Y4C-F7-HnZ"/>
-                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="i7u-Z4-eb8"/>
+                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="top" secondItem="F4d-X6-rSY" secondAttribute="bottom" constant="90" id="hci-oF-clh"/>
+                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="i7u-Z4-eb8"/>
                             <constraint firstItem="F4d-X6-rSY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="pJD-X4-vJb"/>
                             <constraint firstItem="F4d-X6-rSY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qxb-lc-OGA"/>
                         </constraints>
@@ -78,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423.1884057971015" y="-83.035714285714278"/>
+            <point key="canvasLocation" x="214" y="-39"/>
         </scene>
     </scenes>
     <resources>

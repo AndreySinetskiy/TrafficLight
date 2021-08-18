@@ -10,12 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var redLightView: UIView!
-    
     @IBOutlet weak var yellowLightView: UIView!
-    
     @IBOutlet weak var greenLightView: UIView!
     
     @IBOutlet weak var changeLightButton: UIButton!
+    
+    private var countPressButton = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         changeLightButton.layer.cornerRadius = 15
         
     }
-    private var countPressButton = 0
     @IBAction func changeLightButtonPressed(_ sender: UIButton) {
         changeLightButton.setTitle("Next", for: .normal)
         countPressButton += 1
