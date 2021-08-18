@@ -17,26 +17,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-X6-rSY">
-                                <rect key="frame" x="167" y="64" width="80" height="350"/>
+                                <rect key="frame" x="167" y="94" width="80" height="350"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-Id-t4w">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="JAl-Dw-at5"/>
+                                            <constraint firstAttribute="height" constant="80" id="JYd-dT-RJ7"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="brl-nN-mGd"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="w1t-wk-oBV"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pv8-If-VPx">
                                         <rect key="frame" x="0.0" y="135" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="7Px-84-wP0"/>
+                                            <constraint firstAttribute="height" constant="80" id="KAj-sE-WQW"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="ODe-8L-Xd6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="iue-iP-x5Z"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-UT-cvF">
                                         <rect key="frame" x="0.0" y="270" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="A0h-zj-HzO"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="ZNt-OT-Zjs"/>
+                                            <constraint firstAttribute="height" constant="80" id="bbo-Y7-aKU"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="eoh-tI-Hv8"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="AQI-9X-j3A"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-xA-fNe">
-                                <rect key="frame" x="138" y="580" width="138" height="49"/>
+                                <rect key="frame" x="157" y="573" width="100" height="51"/>
                                 <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -48,15 +69,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="top" secondItem="F4d-X6-rSY" secondAttribute="bottom" constant="166" id="5p2-vm-N8g"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgh-xA-fNe" secondAttribute="trailing" constant="138" id="97z-qx-hrg"/>
-                            <constraint firstItem="F4d-X6-rSY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KGV-cF-vlc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F4d-X6-rSY" secondAttribute="bottom" constant="448" id="L0B-tg-Iui"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F4d-X6-rSY" secondAttribute="trailing" constant="166" id="Sgy-LM-cWQ"/>
-                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="TxJ-Rr-gID"/>
-                            <constraint firstItem="F4d-X6-rSY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fkW-9D-Tge"/>
-                            <constraint firstItem="F4d-X6-rSY" firstAttribute="centerY" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i1S-Ud-aki"/>
-                            <constraint firstItem="F4d-X6-rSY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="i1a-iF-Pae"/>
+                            <constraint firstItem="F4d-X6-rSY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="FJm-LO-c3R"/>
+                            <constraint firstItem="F4d-X6-rSY" firstAttribute="centerX" secondItem="Fgh-xA-fNe" secondAttribute="centerX" id="JpK-RN-k0K"/>
+                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="top" secondItem="F4d-X6-rSY" secondAttribute="bottom" constant="129" id="KNJ-X1-inc"/>
+                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWf-wi-ivn"/>
+                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="eSp-iK-Cff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fgh-xA-fNe" secondAttribute="bottom" constant="238" id="p4e-z9-s0U"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-380" y="76"/>
+            <point key="canvasLocation" x="-423.1884057971015" y="-83.035714285714278"/>
         </scene>
     </scenes>
     <resources>
