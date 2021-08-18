@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         
     }
     @IBAction func changeLightButtonPressed(_ sender: UIButton) {
-        changeLightButton.setTitle("Next", for: .normal)
+        sender.setTitle("Next", for: .normal)
         countPressButton += 1
         if countPressButton % 3 == 1 {
             redLightView.alpha = 1
