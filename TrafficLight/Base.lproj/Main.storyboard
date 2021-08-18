@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-X6-rSY">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-X6-rSY">
                                 <rect key="frame" x="167" y="94" width="80" height="350"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-Id-t4w">
@@ -50,12 +50,10 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="AQI-9X-j3A"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-xA-fNe">
-                                <rect key="frame" x="157" y="573" width="100" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-xA-fNe">
+                                <rect key="frame" x="157" y="573" width="66" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Start">
@@ -68,14 +66,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="F4d-X6-rSY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="FJm-LO-c3R"/>
-                            <constraint firstItem="F4d-X6-rSY" firstAttribute="centerX" secondItem="Fgh-xA-fNe" secondAttribute="centerX" id="JpK-RN-k0K"/>
-                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="top" secondItem="F4d-X6-rSY" secondAttribute="bottom" constant="129" id="KNJ-X1-inc"/>
-                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWf-wi-ivn"/>
-                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="eSp-iK-Cff"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fgh-xA-fNe" secondAttribute="bottom" constant="238" id="p4e-z9-s0U"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="changeLightButton" destination="Fgh-xA-fNe" id="nLC-rX-mdG"/>
