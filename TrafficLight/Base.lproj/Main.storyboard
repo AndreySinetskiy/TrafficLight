@@ -16,21 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-X6-rSY">
-                                <rect key="frame" x="167" y="94" width="80" height="350"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-X6-rSY">
+                                <rect key="frame" x="167" y="104" width="80" height="360"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-Id-t4w">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="JAl-Dw-at5"/>
-                                            <constraint firstAttribute="height" constant="80" id="JYd-dT-RJ7"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="brl-nN-mGd"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="w1t-wk-oBV"/>
+                                            <constraint firstAttribute="height" constant="80" id="0Lz-QO-FVU"/>
+                                            <constraint firstAttribute="width" constant="80" id="o3W-WD-aN4"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pv8-If-VPx">
-                                        <rect key="frame" x="0.0" y="135" width="80" height="80"/>
+                                        <rect key="frame" x="0.0" y="140" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="7Px-84-wP0"/>
@@ -40,20 +38,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-UT-cvF">
-                                        <rect key="frame" x="0.0" y="270" width="80" height="80"/>
+                                        <rect key="frame" x="0.0" y="280" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="A0h-zj-HzO"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="ZNt-OT-Zjs"/>
-                                            <constraint firstAttribute="height" constant="80" id="bbo-Y7-aKU"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="eoh-tI-Hv8"/>
+                                            <constraint firstAttribute="height" constant="80" id="q9v-Yx-2Dr"/>
+                                            <constraint firstAttribute="width" constant="80" id="rPd-P3-ybS"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-xA-fNe">
-                                <rect key="frame" x="157" y="573" width="66" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-xA-fNe">
+                                <rect key="frame" x="145" y="573" width="132" height="51"/>
                                 <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Start">
@@ -66,6 +61,13 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="top" secondItem="F4d-X6-rSY" secondAttribute="bottom" constant="109" id="OCZ-yW-GZP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgh-xA-fNe" secondAttribute="trailing" constant="137" id="Y4C-F7-HnZ"/>
+                            <constraint firstItem="Fgh-xA-fNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="i7u-Z4-eb8"/>
+                            <constraint firstItem="F4d-X6-rSY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="pJD-X4-vJb"/>
+                            <constraint firstItem="F4d-X6-rSY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qxb-lc-OGA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="changeLightButton" destination="Fgh-xA-fNe" id="nLC-rX-mdG"/>
